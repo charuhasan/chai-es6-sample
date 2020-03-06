@@ -6,13 +6,13 @@
   "scripts": {
         "test":"babel-node ./node_modules/.bin/isparta cover _mocha",
     "coverage": "jest --coverage --coverageDirectory=output/coverage/jest",
-    "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha",
+    "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha"
+  },
     "jest": {
     "coverageReporters": [
       "text",
       "cobertura"
-    ]
-  }
+      ]
   },
   "repository": {
     "type": "git",
