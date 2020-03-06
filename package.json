@@ -4,17 +4,8 @@
   "description": "An sample module that shows how to use Mocha, Chai and Istanbul to test and generate coverage for ES6 code.",
   "main": "rectangle.js",
   "scripts": {
-     "scripts": {
-       "test":"mocha",
+        "test":"babel-node ./node_modules/.bin/isparta cover _mocha",
     "coverage": "jest --coverage --coverageDirectory=output/coverage/jest"
-  },
-  "jest": {
-    "coverageReporters": [
-      "text",
-      "cobertura"
-    ]
-  },
-
     "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha",
     "jest": {
     "coverageReporters": [
@@ -34,7 +25,7 @@
   },
   "homepage": "https://github.com/argelius/chai-es6-sample#readme",
   "devDependencies": {
-    "babel": "^5.8.19",
+    "babel-cli": "^6.26.0",
     "chai": "^3.2.0",
     "isparta": "^3.0.4",
      "jest": "^25.1.0",
