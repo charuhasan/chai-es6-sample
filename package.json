@@ -5,7 +5,8 @@
   "main": "rectangle.js",
   "scripts": {
      "scripts": {
-    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+       "test":"mocha",
+    "coverage": "jest --coverage --coverageDirectory=output/coverage/jest"
   },
   "jest": {
     "coverageReporters": [
