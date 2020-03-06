@@ -4,8 +4,8 @@
   "description": "An sample module that shows how to use Mocha, Chai and Istanbul to test and generate coverage for ES6 code.",
   "main": "rectangle.js",
   "scripts": {
-    "test": "jest --coverage --coverageDirectory=output/coverage/jest",
-    "coverage": "istanbul cover _mocha -- --compilers js:babel/register",
+    "coverage": "nyc mocha --timeout=3000",
+    "test": "mocha",
     "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha",
     "jest": {
     "coverageReporters": [
