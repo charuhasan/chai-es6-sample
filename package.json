@@ -5,7 +5,7 @@
   "main": "rectangle.js",
   "scripts": {
         "test":"babel-node ./node_modules/.bin/isparta cover _mocha",
-    "coverage": "jest --coverage --coverageDirectory=output/coverage/jest"
+    "coverage": "jest --coverage --coverageDirectory=output/coverage/jest",
     "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha",
     "jest": {
     "coverageReporters": [
